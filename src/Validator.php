@@ -36,7 +36,7 @@ class Validator {
         $number_string = substr($name, 1);
         if (!preg_match('!^\\d+$!', $number_string)) { return false; }
         if (bccomp($number_string, "95428956661682201") < 0) { return false; }
-        if (bccomp($number_string, "18446744073709600000") > 0) { return false; }
+        if (bccomp($number_string, "18446744073709551615") > 0) { return false; }
 
         return true;
     }
