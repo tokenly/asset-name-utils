@@ -1,12 +1,13 @@
 <?php
 
 use Tokenly\AssetNameUtils\Validator;
-use \PHPUnit_Framework_Assert as PHPUnit;
+use \PHPUnit\Framework\Assert as PHPUnit;
+use PHPUnit\Framework\TestCase;
 
 /*
 * 
 */
-class AssetValidationTest extends PHPUnit_Framework_TestCase {
+class AssetValidationTest extends TestCase {
 
     public function testIsValidAssetName() {
         PHPUnit::assertTrue(Validator::isValidAssetName('MYTOKEN'));
